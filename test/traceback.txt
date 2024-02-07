@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 2, in script
+    define b = character()
+  File "game/script.rpy", line 2, in <module>
+    define b = character()
+NameError: name 'character' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 2, in script
+    define b = character()
+  File "D:\renpy-8.0.3-sdk\renpy\ast.py", line 2219, in execute
+    self.set()
+  File "D:\renpy-8.0.3-sdk\renpy\ast.py", line 2233, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "D:\renpy-8.0.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 2, in <module>
+    define b = character()
+NameError: name 'character' is not defined
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.2.0.24012702
+test 1.0
+Fri Feb  2 22:43:39 2024
